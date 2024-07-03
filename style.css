@@ -1,0 +1,45 @@
+body {
+  background-color: #eee;
+  box-sizing: border-box;
+}
+
+main {
+  width: clamp(300px, 100%, 700px);
+  margin: 50px auto;
+  background-color: #fff;
+}
+
+.question {
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.answer {
+ border-bottom: 2px solid #000;
+ padding: 20px;
+
+}
+
+strong {
+  border-radius: 50%;
+  background-color: lightblue;
+  padding: 4px;
+}
+
+p {
+  margin: 25px 0 0 0;
+}
+
+.answer[open] p {
+  animation: aparecer 1s .2s both;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    translate: 0 -20px;
+  }
+  to {
+    opacity: 1;
+  }
+}
