@@ -3,6 +3,14 @@ body {
   box-sizing: border-box;
 }
 
+.enlace {
+  margin: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(42, 134, 164);
+}
+
 main {
   width: clamp(300px, 95%, 800px);
   margin: 50px auto;
